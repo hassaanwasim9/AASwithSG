@@ -64,7 +64,7 @@ Path to AASWithSG.java in the current remote repository is "*AASwithSG/basyx.com
  
 ![image](https://user-images.githubusercontent.com/32246811/214176862-1c248428-5b96-46f0-bea8-1755f08fdc54.png)
 
- Data Loaded! <img src="https://user-images.githubusercontent.com/32246811/216557368-ddb0b57f-0805-4aec-a5bd-dca000867c26.png" alt="smiley" width=25>
+ Data Loaded! <img src="https://user-images.githubusercontent.com/32246811/216557963-fe222ff6-6813-4ed6-a016-ff746ad9ec44.jpg" alt="smiley" width=25>
 
 
 After executing the code, we can check if the data is uploaded as desired or not by downloading the bridge json from NetApp S3 Console in web browser.
