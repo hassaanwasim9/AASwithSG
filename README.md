@@ -4,7 +4,7 @@ This repository contains the implementation of Asset Administration Shell (AAS) 
 
 ## Prerequisites
  - Install TortoiseGit-2.13.0.1. ![5968282](https://user-images.githubusercontent.com/32246811/216548182-4ca8da82-96e5-4144-bf08-391bef460d08.png)
-
+<img src="https://user-images.githubusercontent.com/32246811/216548182-4ca8da82-96e5-4144-bf08-391bef460d08.png" alt="Your image title" width="250"/>
  - Install jdk-11.0.17.8.
 
  - Install Eclipse (4.25.0).
