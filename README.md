@@ -1,15 +1,15 @@
-# AAS with S3
+# AAS with SG
 
 This repository contains the implementation of Asset Administration Shell (AAS) with StorageGrid (SG).
 
 ## Prerequisites
- - Install TortoiseGit-2.13.0.1. 
+ - Install TortoiseGit-2.13.0.1. <img src="https://user-images.githubusercontent.com/32246811/216552329-3a2cdc03-7f0e-4fd2-930f-690b19c0e203.png" alt="tortgit" width="25"/>
 
-- Install jdk-11.0.17.8. <img src="https://user-images.githubusercontent.com/32246811/216548182-4ca8da82-96e5-4144-bf08-391bef460d08.png" alt="Your image title" width="25"/>
+ - Install jdk-11.0.17.8. <img src="https://user-images.githubusercontent.com/32246811/216548182-4ca8da82-96e5-4144-bf08-391bef460d08.png" alt="javadsk" width="25"/>
 
- - Install Eclipse (4.25.0).
+ - Install Eclipse (4.25.0). <img srch="ttps://user-images.githubusercontent.com/32246811/216552744-672f838f-2823-45ff-8e4c-df349864bb64.png"  alt="eclipse" width="25"/>
 
- - Install postgresql 13.8 (Run as administrator)
+ - Install postgresql 13.8 (Run as administrator). <img src="https://user-images.githubusercontent.com/32246811/216552772-8cf7a495-8f8e-487e-9681-d820f16e67d7.png"  alt="psql" width="25"/>
 
 ### S3 Browser
 
