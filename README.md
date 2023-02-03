@@ -1,31 +1,74 @@
-# Eclipse BaSyx Java Components
-[![BaSyx Logo](https://www.eclipse.org/basyx/img/basyxlogo.png)](https://www.eclipse.org/basyx/)
+# AAS with S3
 
-The Eclipse BaSyx Java Components are part of the [Eclipse BaSyx middleware](https://www.eclipse.org/basyx/). The Components utilize the [BaSyx Java SDK](https://github.com/eclipse-basyx/basyx-java-sdk) to provide easy to use off-the-shelf components and have been created within the [BaSys](https://www.basys40.de/) project.
+This repository contains the implementation of Asset Administration Shell (AAS) with StorageGrid (SG).
 
-## Eclipse Wiki
-A detailed technical and user documentation can be found in the [Eclipse BaSyx wiki](https://wiki.eclipse.org/BaSyx). For the Java SDK, you can find instructions about [how to install](https://wiki.eclipse.org/BaSyx_/_Download_/_Java_Setup) and find [introductory](https://wiki.eclipse.org/BaSyx_/_Introductory_Examples) and [extended](https://wiki.eclipse.org/BaSyx_/_Examples) code examples and further [scenarios](https://wiki.eclipse.org/BaSyx_/_Scenarios). Also, see the description of the individual [components and their API](https://wiki.eclipse.org/BaSyx_/_Documentation_/_API).
+## Prerequisites
+ - Install TortoiseGit-2.13.0.1.
 
-## Blog posts
+ - Install jdk-11.0.17.8.
 
-For further information, you may also read the blog posts about the Industrie 4.0 IT Infrastructure for Digital Twins:
-- Part 1 - [Building the Industry 4.0 IT Infrastructure for Digital Twins](https://www.iese.fraunhofer.de/blog/industry-4-0-it-infrastructure-for-digital-twins/)
-- Part 2 - [Implementing the Industrie 4.0 IT Infrastructure for Digital Twins](https://www.iese.fraunhofer.de/blog/industrie-4-0-it-infrastructure-for-digital-twins-part2/).
+ - Install Eclipse (4.25.0).
 
-## Video documentation
+ - Install postgresql 13.8 (Run as administrator)
 
-Additionally to video documentation of the [SDK](https://github.com/eclipse-basyx/basyx-java-sdk), there is a video showcasing how to use the off-the-shelf components:
+### S3 Browser
 
-[![Getting started with Eclipse BaSyx: Easy AAS setup with off-the-shelf components](http://img.youtube.com/vi/nGRNg0sj1oY/mqdefault.jpg)](https://www.youtube.com/watch?v=nGRNg0sj1oY)
+To upload csv files to S3, we use S3 browser as it provides a user-friendly GUI and a faster upload speed.
 
-*BaSyx-Middleware – easily explained with the model factory*
+To begin, using the S3 browser, upload the bridge data from local disk to S3 bucket by clicking “Upload” and following the screenshots below:
+ 
+![image](https://user-images.githubusercontent.com/32246811/214176666-e16a92ce-b74d-4fd3-b2e6-ec06f18c87c3.png)
+ 
+ Then, locate the file:
+ 
+![image](https://user-images.githubusercontent.com/32246811/214176736-9f2f3ac3-fe86-4ee8-9433-a56062b940a4.png)
+
+![image](https://user-images.githubusercontent.com/32246811/214176758-cccde9ea-9a80-423f-9720-9cb3a27d9cdf.png)
 
 
-## Contributing
+### Eclipse IDE
 
-If you would like to contribute, please notice the [contribution guidelines](CONTRIBUTING.md). The overall process is described in the [Eclipse wiki](https://wiki.eclipse.org/BaSyx_/_Developer_/_Contributing).
 
-This GitHub project is migrated from the Eclipse infrastructure. For the archived history, see the [archive repository](https://github.com/eclipse-basyx/basyx-archive).
-# AASwithS3
-# repository
-# repository
+Clone the Git repo to your local directory. 
+Open it using Eclipse IDE with Java 11.0.17.8.
+Afterwards, navigate to Basyx.components.AASServer/src/test/java/s3/AASWithSG.java.
+
+
+
+Set AAS_BUCKET_NAME and SUBMODEL_BUCKET_NAME.
+
+ ![image](https://user-images.githubusercontent.com/32246811/214176792-dc38fbe8-c34a-4380-965a-79b07b4e05cf.png)
+
+
+Put S3 Configuration values within “”.
+
+ ![image](https://user-images.githubusercontent.com/32246811/214176823-0afb47c1-932a-42d7-aaac-33c285eb650f.png)
+
+
+
+Set submodelIdentifier1 (bridge ID)
+
+ ![image](https://user-images.githubusercontent.com/32246811/214176837-73b75508-b811-4f29-91c6-5e4c61f73c50.png)
+
+
+
+Set filename (name of the file uploaded through S3 browser to the bucket).
+
+![image](https://user-images.githubusercontent.com/32246811/214176852-78c23a72-25a2-45cf-990b-c95c81a8974e.png)
+ 
+ 
+![image](https://user-images.githubusercontent.com/32246811/214176862-1c248428-5b96-46f0-bea8-1755f08fdc54.png)
+
+ 
+
+
+After executing the code, we can check if the data is uploaded as desired or not by downloading the bridge json from NetApp S3 Console in web browser.
+
+![image](https://user-images.githubusercontent.com/32246811/214176884-27077a14-5f7e-4f6a-9128-f78dbe6ebce0.png)
+ 
+
+After downloading, we can check if the values are correct or not using NotePad
+
+ ![image](https://user-images.githubusercontent.com/32246811/214176899-25660f8f-7394-4e7c-b1ce-c76c19443bdc.png)
+
+
