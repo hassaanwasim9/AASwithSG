@@ -1,6 +1,6 @@
 # AAS with SG
 
-This repository contains the implementation of Asset Administration Shell (AAS) with StorageGrid (SG).
+This repository contains the implementation of Eclipse BaSyx Asset Administration Shell (AAS) with NetApp StorageGrid (SG).
 
 ## Prerequisites
  - Install TortoiseGit-2.13.0.1. <img src="https://user-images.githubusercontent.com/32246811/216552329-3a2cdc03-7f0e-4fd2-930f-690b19c0e203.png" alt="tortgit" width="25"/>
