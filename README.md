@@ -79,3 +79,4 @@ After downloading the, we can check if the values are correct or not using NoteP
 
 
 ### Example - Data Analysis 
+To try out and perform some data analyis by retreiving data from StorageGrid (S3), using NetApp DataOps Toolkit, checkout sample in Example folder of this repository
